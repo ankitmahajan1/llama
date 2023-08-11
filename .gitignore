@@ -1,0 +1,9 @@
+.venv/
+venv/
+__pycache__/
+.DS_Store
+.env
+logs
+.coverage
+htmlcov
+azure_jwt_keys.json
