@@ -6,7 +6,6 @@ from llama_cpp import Llama
 from uuid import uuid4
 from langchain.chains.question_answering import load_qa_chain
 from chromadb.config import Settings
-from langchain.prompts import PromptTemplate
 from langchain.llms.llamacpp import LlamaCpp
 from langchain.schema import Document
 
@@ -68,6 +67,9 @@ def get_result(query):
     print(result)
 
 
+# uncomment below code if you are quering over loaded document
+# query = "why old women transferred the property"
+# get_result(query)
 
-query = "why old women transferred the property"
-get_result(query)
+# uncomment below code to load the documents in vector db
+load_documents()
